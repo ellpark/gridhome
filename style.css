@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.gridContainer {
+    border: 10px solid grey;
+    display: grid;
+    gap: 10px;
+    justify-content: space-between;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+    grid-template-areas: 'one two three'
+    'four . five';
+}
+
+.box {
+    height: 520px;
+    width: 520px;
+    border: 10px solid pink;
+    font-size: 600%;
+    padding: 60px;
+    padding-left: 70px;
+    position: center;
+    padding-top: 80px;
+ 
+}
+.one{
+    background: rgb(250, 158, 142);
+    grid-area: one;
+
+
+}
+.two{
+    background: rgb(205, 233, 196);
+    grid-area: two;
+    padding-left: 150px;
+    height: 202%;
+    width: 520px;
+}
+.three{
+    background: rgb(123, 123, 163);
+    grid-area: three;
+    padding-left: 150px;
+}
+.four{
+    background: rgb(185, 113, 125);
+    grid-area: four;
+    padding-left: 150px;
+}
+/* .four{
+    background: turquoise;
+} */
+.five{
+    background: violet;
+    grid-area: five;
+}
+.five{
+    background: violet;
+    grid-area: five;
+}
